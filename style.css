@@ -87,7 +87,7 @@ nav a:hover{
 /* ================= CONTENT ================= */
 
 .hero{
-    max-width:1200px;
+    max-width:1350px;
     margin:auto;
     padding:50px 20px;
 }
@@ -95,26 +95,36 @@ nav a:hover{
 /* top section */
 
 .top-cards{
+
     display:flex;
+
     flex-direction:column;
-    gap:25px;
-    margin-bottom:35px;
+
+    gap:35px;
+
+    margin-bottom:50px;
+
 }
 
-/* bottom section */
-
 .bottom-cards{
+
     display:grid;
+
     grid-template-columns:repeat(3,1fr);
-    gap:25px;
+
+    gap:35px;
+
 }
 
 /* ================= CARDS ================= */
 
 .card{
+
     background:white;
-    border-radius:16px;
-    padding:35px;
+
+    border-radius:18px;
+
+    padding:42px;
     box-shadow:0 8px 20px rgba(0,0,0,.08);
     transition:.25s;
 }
