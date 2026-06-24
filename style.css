@@ -12,36 +12,49 @@ line-height:1.6;
 }
 
 header{
-  background: linear-gradient(135deg, #003366, #00509e);
-  color:white;
-  text-align:center;
-  padding:120px 20px;
+background:linear-gradient(135deg,#003366,#00509e);
+color:white;
+text-align:center;
+padding:120px 20px;
 }
 
 header h1{
-font-size:3rem;
+font-size:3.5rem;
 margin-bottom:15px;
+font-weight:700;
 }
 
 header p{
-font-size:1.2rem;
+font-size:1.3rem;
+opacity:.95;
+}
+
+.hero-image{
+height:400px;
+background-image:url(‘https://images.unsplash.com/photo-1522202176988-66273c2fd55f’);
+background-size:cover;
+background-position:center;
 }
 
 nav{
 background:#001f3f;
-padding:15px;
+padding:18px;
 text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:0 15px;
+margin:0 18px;
 font-weight:bold;
+transition:.3s ease;
 }
 
 nav a:hover{
-text-decoration:underline;
+color:#7ec8ff;
 }
 
 .container,
@@ -53,10 +66,16 @@ padding:60px 20px;
 
 .card{
 background:white;
-padding:30px;
-margin-bottom:25px;
-border-radius:12px;
+padding:35px;
+margin-bottom:30px;
+border-radius:14px;
 box-shadow:0 2px 10px rgba(0,0,0,.08);
+transition:all .3s ease;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 12px 30px rgba(0,0,0,.12);
 }
 
 .card h2{
@@ -68,20 +87,44 @@ margin-bottom:15px;
 display:inline-block;
 background:#003366;
 color:white;
-padding:12px 20px;
-border-radius:6px;
+padding:14px 28px;
+border-radius:50px;
 text-decoration:none;
+font-weight:bold;
 margin-top:15px;
+transition:all .3s ease;
 }
 
 .button:hover{
 background:#00509e;
+transform:scale(1.05);
 }
 
 footer{
 background:#003366;
 color:white;
 text-align:center;
-padding:25px;
-margin-top:40px;
+padding:30px;
+margin-top:50px;
+}
+
+@media (max-width:768px){
+
+header{
+padding:80px 20px;
+}
+
+header h1{
+font-size:2.5rem;
+}
+
+nav a{
+display:inline-block;
+margin:8px;
+}
+
+.hero-image{
+height:250px;
+}
+
 }
