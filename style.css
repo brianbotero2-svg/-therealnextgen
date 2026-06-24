@@ -31,7 +31,7 @@ opacity:.95;
 
 .hero-image{
 height:400px;
-background-image:url(‘https://images.unsplash.com/photo-1522202176988-66273c2fd55f’);
+background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f');
 background-size:cover;
 background-position:center;
 }
@@ -127,4 +127,37 @@ margin:8px;
 height:250px;
 }
 
+}
+
+.hero-overlay{
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:rgba(0,0,0,.45);
+color:white;
+padding:20px;
+}
+
+.hero-overlay h2{
+font-size:3rem;
+margin-bottom:15px;
+}
+
+.hero-overlay p{
+font-size:1.2rem;
+margin-bottom:20px;
+max-width:700px;
+}
+
+.hero{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+  gap:25px;
+}
+
+.hero .card{
+  margin-bottom:0;
 }
