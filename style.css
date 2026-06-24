@@ -12,10 +12,10 @@ line-height:1.6;
 }
 
 header{
-background:#003366;
-color:white;
-text-align:center;
-padding:80px 20px;
+  background: linear-gradient(135deg, #003366, #00509e);
+  color:white;
+  text-align:center;
+  padding:120px 20px;
 }
 
 header h1{
