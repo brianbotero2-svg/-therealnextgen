@@ -89,12 +89,9 @@ color:#d9d9d9;
 /* ================= PAGE ================= */
 
 .hero{
-max-width:1500px;
+max-width:1400px;
 margin:auto;
 padding:70px 45px;
-display:grid;
-grid-template-columns:1.3fr 1fr;
-gap:40px;
 }
 
 /* LEFT COLUMN */
@@ -305,6 +302,42 @@ max-width:100%;
 .section-title{
 font-size:2rem;
 margin:50px 0 25px;
+}
+
+}
+
+/* ONLY TEAM PAGE */
+
+.team-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+margin-bottom:70px;
+}
+
+.team-president{
+display:flex;
+justify-content:center;
+margin-bottom:70px;
+}
+
+.president-card{
+max-width:500px;
+width:100%;
+}
+
+.team-card img{
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+border-radius:18px;
+margin-bottom:20px;
+}
+
+@media(max-width:1000px){
+
+.team-grid{
+grid-template-columns:1fr;
 }
 
 }
