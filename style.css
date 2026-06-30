@@ -461,3 +461,25 @@ max-width:100%;
     border-radius:12px;
 
 }
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin:40px 0;
+
+}
+
+@media(max-width:900px){
+
+.contact-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
