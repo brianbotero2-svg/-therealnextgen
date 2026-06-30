@@ -494,3 +494,15 @@ max-width:100%;
 
 }
 
+.two-column{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+    margin-bottom:40px;
+}
+
+@media(max-width:900px){
+    .two-column{
+        grid-template-columns:1fr;
+    }
+}
