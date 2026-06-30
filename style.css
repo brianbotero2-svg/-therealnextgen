@@ -483,3 +483,27 @@ max-width:100%;
 }
 
 }
+
+.instagram-qr{
+
+    width:140px;
+
+    max-width:100%;
+
+    display:block;
+
+    margin:20px auto;
+
+    border-radius:12px;
+
+    transition:transform .2s ease;
+
+}
+
+.instagram-qr:hover{
+
+    transform:scale(1.05);
+
+    cursor:pointer;
+
+}
