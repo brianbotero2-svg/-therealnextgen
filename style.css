@@ -89,51 +89,34 @@ color:#d9d9d9;
 /* ================= PAGE ================= */
 
 .hero{
-
-    max-width:1400px;
-
+    max-width:1500px;
     margin:auto;
-
-    padding:70px 45px;
+    padding:70px 40px;
 
     display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:40px;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:35px;
 
     align-items:start;
-
 }
 
-.top-cards{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:40px;
-
-}
-
-.bottom-cards{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:40px;
-
-}
 
 /* ================= CARDS ================= */
 
 .card{
-background:white;
-border-radius:20px;
-padding:48px;
-box-shadow:0 10px 30px rgba(0,0,0,.06);
-transition:.25s ease;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.25s ease;
+
+    height:fit-content;
+
 }
 
 .card:hover{
@@ -186,8 +169,13 @@ margin-top:70px;
 @media(max-width:1000px){
 
 .hero{
+
     grid-template-columns:1fr;
+
+    gap:25px;
+
     padding:45px 20px;
+
 }
 .hero-image{
     height:350px;
