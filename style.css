@@ -522,3 +522,67 @@ max-width:100%;
         grid-template-columns:1fr;
     }
 }
+
+/* ================= MONTHLY HOURS PAGE ================= */
+
+.hours-hero{
+    min-height:75vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 20px;
+}
+
+.hours-card{
+    max-width:800px;
+    width:100%;
+    background:white;
+    padding:55px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.hours-card h1{
+    color:#222;
+    font-size:2.8rem;
+    margin-bottom:20px;
+}
+
+.hours-description{
+    color:#555;
+    font-size:1.08rem;
+    line-height:1.9;
+    margin-bottom:35px;
+}
+
+.submit-btn{
+    display:inline-block;
+    background:#282828;
+    color:white;
+    text-decoration:none;
+    padding:16px 36px;
+    border-radius:999px;
+    font-weight:bold;
+    transition:.25s;
+}
+
+.submit-btn:hover{
+    background:#111;
+}
+
+@media(max-width:900px){
+
+.hours-card{
+    padding:35px 25px;
+}
+
+.hours-card h1{
+    font-size:2.1rem;
+}
+
+.hours-description{
+    font-size:1rem;
+}
+
+}
