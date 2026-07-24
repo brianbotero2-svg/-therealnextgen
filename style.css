@@ -660,28 +660,47 @@ max-width:100%;
 @media(max-width:900px){
 
 .calendar-card{
-
     padding:25px;
-
 }
 
 .calendar-card h1{
-
     font-size:2.1rem;
-
 }
 
 .calendar-frame{
-
     height:600px;
+}
 
 }
 
-    .qr-code {
-    display: block;
-    width: 250px;
-    height: auto;
-    max-width: 100%;
-    margin: 30px auto;
+/* ================= QR CODE ================= */
+
+.qr-code{
+    display:block;
+    width:260px;
+    max-width:100%;
+    height:auto;
+    margin:35px auto 20px;
+    border-radius:12px;
+    box-shadow:0 8px 24px rgba(0,0,0,.12);
 }
 
+.qr-text{
+    text-align:center;
+    color:#555;
+    margin-bottom:12px;
+}
+
+.qr-link{
+    text-align:center;
+}
+
+.qr-link a{
+    color:#282828;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.qr-link a:hover{
+    text-decoration:underline;
+}
