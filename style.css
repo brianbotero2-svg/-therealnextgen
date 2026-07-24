@@ -674,3 +674,9 @@ max-width:100%;
 }
 
 }
+.top-cards,
+.bottom-cards{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
